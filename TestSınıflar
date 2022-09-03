@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
+public class Testsınıflar {
+
+	public static void main(String[] args) {
+		Sınflar s1 = new Sınflar(10, 8);
+		Sınflar s2 = new Sınflar(10, 7);
+		Sınflar s3 = new Sınflar(10, 5);
+
+		String names[] = { "Çağatay", "Okan", "Emir", "Eray", "Saadet", "Samet", "Samer", "Kadir", "Ayşe", "Ayşem",
+				"Berkay", "Baki", "Elif", "Melisa", "Ali", "Rıza", "Ferhunde", "Feride", "Nuri", "Mehmet" };
+
+		ArrayList<String> sınıf1 = new ArrayList<>();
+		ArrayList<String> sınıf2 = new ArrayList<>();
+		ArrayList<String> sınıf3 = new ArrayList<>();
+
+		Arrays.sort(names);
+
+		for (int i = 0; i < s1.mevcut; i++) {
+
+			sınıf1.add(names[i]);
+
+		}
+		for (int i = 8; i < 15; i++) {
+
+			sınıf2.add(names[i]);
+
+		}
+		for (int i = 15; i < 20; i++) {
+
+			sınıf3.add(names[i]);
+
+		}
+
+		s1.sınıfoluşturma.put(s1, sınıf1);
+		s2.sınıfoluşturma.put(s2, sınıf2);
+		s3.sınıfoluşturma.put(s3, sınıf3);
+		System.out.println(s1.sınıf + "A");
+		System.out.println(s1.sınıfoluşturma.get(s1));
+		System.out.println("----------------------------------");
+		System.out.println(s2.sınıf + "B");
+		System.out.println(s2.sınıfoluşturma.get(s2));
+		System.out.println("----------------------------------");
+		System.out.println(s3.sınıf + "C");
+		System.out.println(s3.sınıfoluşturma.get(s3));
+
+	}
+
+}
