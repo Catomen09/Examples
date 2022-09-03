@@ -1,0 +1,22 @@
+public class öğrenciler {
+	String adı;
+	String soyadı;
+	int yaşı;
+	
+	public öğrenciler(String adı,String soyadı,int yaşı) {
+		this.adı=adı;
+		this.soyadı=soyadı;
+		this.yaşı=yaşı;
+		
+	}
+	@Override
+	public String toString() {
+		
+		return adı+soyadı+yaşı;
+	}
+	
+	
+public static void main(String[] args) {
+	
+}
+}
